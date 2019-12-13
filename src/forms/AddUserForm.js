@@ -1,6 +1,20 @@
 import React, { useState } from 'react';
 
 const AddUserForm = props => {
+
+  const initialFormState = { 
+    id: null, 
+    name: '', 
+    email: '',
+    phone: '',
+    address: '',
+    city: '',
+    state: '',
+    zip: ''
+  }
+  
+  const [user, setUser] = useState(initialFormState)
+
   return (
     <form>
       <label>Name</label>
